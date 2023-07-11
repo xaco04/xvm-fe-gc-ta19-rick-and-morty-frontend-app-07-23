@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="character-grid">
+        <div class="card" *ngFor="let character of characters">
+            <img class="card-img-top character-image" [src]="character.image" alt="{{ character.name }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ character.name }}</h5>
+                <button class="btn btn-primary btn-details" (click)="showDetails(character)">See more</button>
+            </div>
+            <div class="character-details" *ngIf="selectedCharacter === character">
+                <h2>Detalles del personaje:</h2>
+                <p>Nombre: {{ character.name | origin }}</p>
+                <p>Estado: {{ character.status | origin }}</p>
+                <p>Especie: {{ character.species | origin }}</p>
+                <p>Genero: {{ character.gender | origin }}</p>
+                <p>Origen: {{ character.origin.name | origin }}</p>
+                <button class="btn btn-secondary" (click)="hideDetails()">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
