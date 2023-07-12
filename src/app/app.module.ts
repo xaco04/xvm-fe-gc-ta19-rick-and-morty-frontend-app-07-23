@@ -12,8 +12,8 @@ import { ListapersComponent } from './home/listapers/listapers.component';
 import { PersComponent } from './home/listapers/pers/pers.component';
 import { NavbarComponent } from './home/navbar/navbar.component';
 import { AboutComponent } from './home/about/about.component';
-import { OriginPipe } from './origin.pipe';
-import { CharacterService } from './character.service';
+import { OriginPipe } from './pipes/origin.pipe';
+import { CharacterService } from './services/character.service';
 
 @NgModule({
   declarations: [
