@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,9 @@ import { NavbarComponent } from './home/navbar/navbar.component';
 import { AboutComponent } from './home/about/about.component';
 import { OriginPipe } from './pipes/origin.pipe';
 import { CharacterService } from './services/character.service';
+import { DetailsComponent } from './home/details/details.component';
+import { AddComponent } from './home/add/add.component';
+import { ListComponent } from './home/list/list.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +29,16 @@ import { CharacterService } from './services/character.service';
     PersComponent,
     NavbarComponent,
     AboutComponent,
-    OriginPipe
+    OriginPipe,
+    DetailsComponent,
+    AddComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [CharacterService],
   bootstrap: [AppComponent]
