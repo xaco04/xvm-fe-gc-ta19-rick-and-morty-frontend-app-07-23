@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core'; 
 import { RouterModule, Routes } from '@angular/router'; 
 
-import { HomeComponent } from './home/home.component' 
+import { HomeComponent } from './components/home/home.component' 
 import { RegisterComponent } from './components/register/register.component'; 
 import { LoginComponent } from './components/login/login.component';
-import { ListapersComponent } from './home/listapers/listapers.component';
-import { AboutComponent } from './home/about/about.component';
-import { AddComponent } from './home/add/add.component';
-import { ListComponent } from './home/list/list.component';
-import { EditComponent } from './home/edit/edit.component';
+import { ListapersComponent } from './components/home/listapers/listapers.component';
+import { AboutComponent } from './components/home/about/about.component';
+import { AddComponent } from './components/home/add/add.component';
+import { ListComponent } from './components/home/list/list.component';
+import { EditComponent } from './components/home/edit/edit.component';
 
 
 const routes: Routes = [ 

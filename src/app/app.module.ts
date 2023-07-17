@@ -9,16 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
-import { HomeComponent } from './home/home.component';
-import { ListapersComponent } from './home/listapers/listapers.component';
-import { PersComponent } from './home/listapers/pers/pers.component';
-import { NavbarComponent } from './home/navbar/navbar.component';
-import { AboutComponent } from './home/about/about.component';
+import { HomeComponent } from './components/home/home.component';
+import { ListapersComponent } from './components/home/listapers/listapers.component';
+import { PersComponent } from './components/home/listapers/pers/pers.component';
+import { NavbarComponent } from './components/home/navbar/navbar.component';
+import { AboutComponent } from './components/home/about/about.component';
 import { OriginPipe } from './pipes/origin.pipe';
 import { CharacterService } from './services/character.service';
-import { AddComponent } from './home/add/add.component';
-import { ListComponent } from './home/list/list.component';
-import { EditComponent } from './home/edit/edit.component';
+import { AddComponent } from './components/home/add/add.component';
+import { ListComponent } from './components/home/list/list.component';
+import { EditComponent } from './components/home/edit/edit.component';
 import { CharactersService } from './services/crudcharacter.service';
 
 @NgModule({
