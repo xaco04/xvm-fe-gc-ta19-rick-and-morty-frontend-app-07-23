@@ -15,9 +15,10 @@ import { NavbarComponent } from './home/navbar/navbar.component';
 import { AboutComponent } from './home/about/about.component';
 import { OriginPipe } from './pipes/origin.pipe';
 import { CharacterService } from './services/character.service';
-import { DetailsComponent } from './home/details/details.component';
 import { AddComponent } from './home/add/add.component';
 import { ListComponent } from './home/list/list.component';
+import { EditComponent } from './home/edit/edit.component';
+import { CharactersService } from './services/crudcharacter.service';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,9 @@ import { ListComponent } from './home/list/list.component';
     NavbarComponent,
     AboutComponent,
     OriginPipe,
-    DetailsComponent,
     AddComponent,
-    ListComponent
+    ListComponent,
+    EditComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,7 @@ import { ListComponent } from './home/list/list.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [CharacterService],
+  providers: [CharacterService, CharactersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

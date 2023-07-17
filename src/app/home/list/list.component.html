@@ -1,1 +1,59 @@
-<p>list works!</p>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<app-navbar></app-navbar>
+<div class="list row">
+    <div class="col-md-8">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search by Name" [(ngModel)]="name"/>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" (click)="searchName()">Search
+        </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4>Characters List</h4>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let character of characters; let i = index" [class.active]="i == currentIndex" (click)="setActiveCharacter(character, i)">
+                {{character.name}}
+
+            </li>
+        </ul>
+        <button class="m-3 btn btn-sm btn-danger" (click)="removeAllCharacters()">Remove All</button>
+    </div>
+    <div class="col-md-6">
+        <div *ngIf="currentCharacter?.id">
+            <h4>Character</h4>
+            <div>
+                <label><strong>Name:</strong></label> {{currentCharacter?.name}}
+            </div>
+            <div>
+                <label><strong>Status:</strong></label> {{currentCharacter?.status}}
+            </div>
+            <div>
+                <label><strong>Species:</strong></label> {{currentCharacter?.species}}
+            </div>
+            <div>
+                <label><strong>Gender:</strong></label> {{currentCharacter?.gender}}
+            </div>
+            <div>
+                <label><strong>Origin:</strong></label> {{currentCharacter?.origin?.name}}
+            </div>
+            <div>
+                <label><strong>Location:</strong></label> {{currentCharacter?.location?.name}}
+            </div>
+            <div>
+                <label><strong>Image:</strong></label>
+                <img [src]="currentCharacter?.image" alt="Character Image" class="character-image" />
+            </div>
+            <button class="btn btn-sm btn-primary float-right" *ngIf="currentCharacter" [routerLink]="['/edit', currentCharacter.id]">Edit</button>
+            <button class="btn btn-sm btn-danger float-right" (click)="deleteCharacter(currentCharacter?.id)">Delete</button>
+
+        </div>
+        <div *ngIf="!currentCharacter">
+            <br/>
+            <p>Please click on a Book...</p>
+        </div>
+    </div>
+
+</div>

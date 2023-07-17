@@ -6,9 +6,9 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { ListapersComponent } from './home/listapers/listapers.component';
 import { AboutComponent } from './home/about/about.component';
-import { DetailsComponent } from './home/details/details.component';
 import { AddComponent } from './home/add/add.component';
 import { ListComponent } from './home/list/list.component';
+import { EditComponent } from './home/edit/edit.component';
 
 
 const routes: Routes = [ 
@@ -34,19 +34,17 @@ const routes: Routes = [
     component: AboutComponent
   },
   {
-    path:'details/:id',
-    component: DetailsComponent
-  },
-  {
     path:'add',
     component: AddComponent
   },
   {
     path:'list',
     component: ListComponent
+  },
+  {
+    path:'edit/:id',
+    component: EditComponent
   }
-
-
 
 ]; 
 @NgModule({ 
