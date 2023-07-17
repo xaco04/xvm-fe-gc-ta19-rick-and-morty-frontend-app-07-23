@@ -683,22 +683,6 @@
       },
       "image": "hola",
       "id": 21
-    },
-    {
-      "name": "marc",
-      "status": "alive",
-      "species": "human",
-      "gender": "male",
-      "origin": {
-        "name": "",
-        "url": ""
-      },
-      "location": {
-        "name": "earth",
-        "url": ""
-      },
-      "image": "hola",
-      "id": 22
     }
   ]
 }
