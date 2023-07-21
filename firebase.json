@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "rickymortyapp_v0.0.3",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

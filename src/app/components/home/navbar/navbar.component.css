@@ -1,8 +1,8 @@
-.buscador {
+.tancarsesio {
     display: flex;
 }
-.buscador button{
+.tancarsesio button{
     margin-left: 5px;
-    border: solid green;
-    color: green;
+    border: solid red;
+    color: red;
 }

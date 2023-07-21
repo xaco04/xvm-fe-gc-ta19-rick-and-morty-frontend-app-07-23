@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "my-project-xavi": {
+      "hosting": {
+        "rickymortyapp_v0.0.3": [
+          "my-project-xavi"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "my-project-xavi"
+  }
+}

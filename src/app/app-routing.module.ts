@@ -12,7 +12,7 @@ import { EditComponent } from './components/home/edit/edit.component';
 
 
 const routes: Routes = [ 
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirige la ruta raíz a '/home' 
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, // Redirige la ruta raíz a '/home' 
   { 
     path:'home', 
     component: HomeComponent 

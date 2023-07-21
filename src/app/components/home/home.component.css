@@ -1,0 +1,27 @@
+.jumbotron {
+    background-color: rgba(8, 8, 8, 0.747);
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.lead {
+    font-size: 18px;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(94, 255, 31);
+}
+
+.jumbotron hr {
+    border-color: #fff;
+    
+}
+
+.jumbotron p {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+}

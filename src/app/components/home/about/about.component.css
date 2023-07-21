@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90vw;
+    height: 80vh;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+
+.about-info {
+    margin-top: 50px;
+    color: white;
+
+    text-align: center;
+}
+
+.about-info h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.about-info img {
+    max-width: 300px;
+}
+.img-fluid {
+    margin-top: 50px;
+}

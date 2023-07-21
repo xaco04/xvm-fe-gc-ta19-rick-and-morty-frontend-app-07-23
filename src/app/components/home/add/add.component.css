@@ -1,4 +1,15 @@
 .submit-form {
     max-width: 400px;
     margin: auto;
+    color: white;
+}
+
+.jumbotron {
+    background-color: rgba(8, 8, 8, 0.747);
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+.container {
+    width: 600px;
 }

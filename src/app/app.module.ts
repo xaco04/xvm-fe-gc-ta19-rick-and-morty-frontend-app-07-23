@@ -20,6 +20,10 @@ import { AddComponent } from './components/home/add/add.component';
 import { ListComponent } from './components/home/list/list.component';
 import { EditComponent } from './components/home/edit/edit.component';
 import { CharactersService } from './services/crudcharacter.service';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,10 @@ import { CharactersService } from './services/crudcharacter.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   providers: [CharacterService, CharactersService],
   bootstrap: [AppComponent]

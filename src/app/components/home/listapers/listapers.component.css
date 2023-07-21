@@ -5,6 +5,8 @@
 }
 .card {
     margin-top: 20px;
+    background-color: rgba(8, 8, 8, 0.836);
+    color: white;
 
 }
 
@@ -13,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
 }
 
@@ -26,7 +28,7 @@
 
 .btn-details {
     border: none;
-    background-color: yellow;
+    background-color: rgb(77, 255, 53);
     color: black;
     display: block;
     width: 100%;

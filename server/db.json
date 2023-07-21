@@ -674,11 +674,11 @@
       "species": "human",
       "gender": "male",
       "origin": {
-        "name": "platano",
+        "name": "",
         "url": ""
       },
       "location": {
-        "name": "pingui",
+        "name": "earth",
         "url": ""
       },
       "image": "hola",
