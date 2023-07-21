@@ -10,15 +10,14 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { ListapersComponent } from './components/home/listapers/listapers.component';
-import { PersComponent } from './components/home/listapers/pers/pers.component';
+import { ListapersComponent } from './components/listapers/listapers.component';
 import { NavbarComponent } from './components/home/navbar/navbar.component';
-import { AboutComponent } from './components/home/about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { OriginPipe } from './pipes/origin.pipe';
 import { CharacterService } from './services/character.service';
-import { AddComponent } from './components/home/add/add.component';
-import { ListComponent } from './components/home/list/list.component';
-import { EditComponent } from './components/home/edit/edit.component';
+import { AddComponent } from './components/add/add.component';
+import { ListComponent } from './components/list/list.component';
+import { EditComponent } from './components/edit/edit.component';
 import { CharactersService } from './services/crudcharacter.service';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
@@ -32,7 +31,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     HomeComponent,
     ListapersComponent,
-    PersComponent,
     NavbarComponent,
     AboutComponent,
     OriginPipe,
