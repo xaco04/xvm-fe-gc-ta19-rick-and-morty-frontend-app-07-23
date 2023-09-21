@@ -1,27 +1,20 @@
-# Rick y Morty App v.0.0.4
+# AUTH Rick & Morty Frontend App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Añade el sistema de autentificación a la app de Rick & Morty que has ido desarrollando en tareas anteriores. Para ello has de utilizar el sistema de autentificación de Google Cloud Firebase.
 
-## Development server
+Añade los enlaces en la parte superior de la página (puedes utilizar un navbar):
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Login
+- Registro
+- Logout
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Configura correctamente los Guards necesarios en  el sistema de enrutado de angular.
+Ejemplo de diseño:
 
-## Build
+![image](https://github.com/xaco04/xvm-fe-gc-ta19-rick-and-morty-frontend-app-07-23/assets/93447803/e9e73081-e461-4dbc-b3f5-94a83b16923c)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+Este proyecto ha de estar en un repositorio de Git creado a tal efecto. Además de ello, has de ponerlo en producción en AWS.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Debes adjuntar las URL de los diferentes repositorios realizados para resolver la tarea (añade node_modules al gitignore) y el enlace generado en AWS. Recuerda que tienes fecha límite de entrega.
